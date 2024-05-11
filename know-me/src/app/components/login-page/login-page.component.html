@@ -1,0 +1,24 @@
+<div class="page">
+    <div class="card">
+        <label class="headlabel">Login</label>
+
+        <div class="input-field">
+            <mat-form-field class="input" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput [(ngModel)]="email" type="email">
+            </mat-form-field>
+        </div>
+        <div class="input-field">
+            <mat-form-field class="input" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput [(ngModel)]="password" type="password">
+            </mat-form-field>
+        </div>
+        <div class="signupbtn">
+            <button mat-button color="primary" (click)="onClickLogin()">Login</button>
+        </div>
+        <div class="signup-link">
+            <a href="/signup">I don't have an account</a>
+        </div>
+    </div>
+</div>

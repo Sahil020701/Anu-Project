@@ -1,0 +1,19 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registration-card {
+    max-width: 400px;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    margin-bottom: 20px;
+}

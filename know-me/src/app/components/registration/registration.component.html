@@ -1,0 +1,18 @@
+<div class="registration-card">
+    <div class="card">
+        <div class="form-section">
+            <label class="headlabel">Registration</label>
+            <div class="select-profile">
+                <label>Profile</label>
+                <select (change)="selectProfile($event.target)">
+                    <option disabled selected>Select a profile</option>
+                    <option [value]="1">Company/Organization</option>
+                    <option [value]="2">Personal</option>
+                </select>
+            </div>
+        </div>
+        <div class="button-section">
+            <button (click)="onClickNext()">Next</button>
+        </div>
+    </div>
+</div>

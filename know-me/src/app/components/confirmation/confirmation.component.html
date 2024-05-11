@@ -1,0 +1,29 @@
+<div class="confirmation-card">
+    <p>Confirmation</p>
+    <hr>
+    <div class="content">
+        <mat-card>
+            <mat-card-content>
+                <mat-card-title>Company Details</mat-card-title>
+                <mat-list>
+                    <mat-list-item>
+                        <strong>Name:</strong>
+                        <span>{{companyName}}</span>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <strong>Address:</strong>
+                        <span>{{companyAddress}}</span>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <strong>GST Number:</strong>
+                        <span>{{companyGSTNumber}}</span>
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="button-section">
+        <button mat-raised-button color="primary" (click)="onClickConfirm()">Confirm</button>
+        <button mat-raised-button color="accent" (click)="onClickEdit()">Edit</button>
+    </div>
+</div>
