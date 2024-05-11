@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { KnowMeService } from 'src/app/services/know-me.service';
 import { AuthService } from 'src/app/services/auth-service.service';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-company-profile',
@@ -9,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./company-profile.component.scss']
 })
 export class CompanyProfileComponent {
-  constructor(private knowme: KnowMeService, private authService: AuthService, private http: HttpClient){}
+  constructor(private knowme: KnowMeService, private authService: AuthService, private http: HttpClient, private router: Router){}
 
   companyName: string = '';
   companyAddress: string = '';
@@ -33,5 +34,9 @@ export class CompanyProfileComponent {
         // You might want to display an error message or handle the error in some way
       }
     );
+  }
+  onClickShow(){
+    this.router.navigate(['/dashboard']);
+
   }
 }

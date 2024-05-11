@@ -12,6 +12,6 @@ export class LandingPageComponent {
     this.router.navigate(['/login']);
   }
   onClickPersonal(){
-    this.router.navigate(['/login']);
+    this.router.navigate(['/personalLogin']);
   }
 }
